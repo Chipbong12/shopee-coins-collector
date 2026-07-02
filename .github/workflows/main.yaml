@@ -21,7 +21,7 @@ jobs:
         run: npm ci
       
       - name: TypeScript compile
-        run: tsc *.ts --lib dom,es2021 --skipLibCheck
+        run: tsc *.ts --lib dom,es2021 --skipLibCheck --ignoreConfig
 
       - name: Hash usr name
         uses: pplanel/hash-calculator-action@v1.3.1
